@@ -20,6 +20,8 @@ self: super: {
   cryptonite = dontCheck super.cryptonite;
   scientific = dontCheck super.scientific;
 
+  vector = dontCheck super.vector;
+
   # pandoc 2.16 and dependencies
   pandoc = self.callHackage "pandoc" "2.16.2" {};
   citeproc = self.callHackage "citeproc" "0.6" {};
